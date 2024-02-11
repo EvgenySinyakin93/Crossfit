@@ -154,7 +154,7 @@ a:hover {
   --color-dark-gray: #404040;
   --color-light-gray: #c4c4c4;
 
-  --border: 1p solid var(--color-white);
+  --border: 1px solid var(--color-white);
   --border-radius: 30px;
 
   --font-family-base: "Heebo", sans-serif;
@@ -198,6 +198,7 @@ a:hover {
   height: 38px;
   align-items: center;
   padding-inline: 26px;
+  margin-inline-end: 10px;
   text-transform: uppercase;
   white-space: nowrap; /*текст на кнопке не будет переноситься*/
   font-size: 12px;
@@ -218,6 +219,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   column-gap: 20px;
+  padding-inline: 32px;
 }
 
 .header-logo {
@@ -226,7 +228,8 @@ a:hover {
 
 .header-menu-list {
   display: flex;
-  column-gap: 50px;
+  flex-wrap: wrap;
+  column-gap: 30px;
 }
 
 .header-menu-link {
@@ -263,12 +266,12 @@ a:hover {
   aspect-ratio: 1;
   padding-left: 8px;
   color: var(--color-white);
-  background-color: black;
+  background-color: transparent;
   border: var(--border);
   border-radius: 50%;
 }
 
-.header-burger-button-line {
+.header-burger-button-line { 
   width: 8px;
   height: 2px;
   background-color: currentColor;
@@ -278,4 +281,40 @@ a:hover {
 .header-burger-button:hover {
   color: var(--color-light-gray);
   border-color: currentColor;
+}
+
+@media (max-width: 1024px) {
+  .header{
+    flex-wrap: wrap;
+    row-gap: 10px;
+    padding-top: 20px;
+    padding-inline: 15px;
+  }
+  .header-menu {
+    order: 1;
+    flex-basis: 100%;
+  }
+  .header-menu-link {
+    height: 50px;
+  }
+
+  @media (max-width: 767px) {
+    .header {
+      padding-top: 10px;
+    }
+
+    .button {
+      padding-inline: 18px;
+    }
+    .header-menu-link {
+      height: 32px;
+    }
+    .header-menu-list {
+      column-gap: 24px;
+    }
+
+    .header-action {
+      column-gap: 15px;
+    }
+  }
 }
