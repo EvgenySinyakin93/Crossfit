@@ -1,51 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kropp Fitness</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <a class="header-logo" href="/">
-            <img 
-            src="../img/logo-header.png" alt="Kropp logo" class="header-logo-image" 
-            width="135" height="25" loading="lazy">
+            <img src="../img/logo-header.png" alt="Kropp logo" class="header-logo-image" width="135" height="25"
+                loading="lazy">
         </a>
         <nav class="header-menu">
             <ul class="header-menu-list">
-                    <li class="header menu item">
-                        <a href="/" class="header-menu-link is-current">home</a>
-                    </li>
-                    <li class="header menu item">
-                        <a href="/" class="header-menu-link">pages</a>
-                    </li>
-                    <li class="header menu item">
-                        <a href="/" class="header-menu-link">portfolio</a>
-                    </li>
-                    <li class="header menu item">
-                        <a href="/" class="header-menu-link">blog</a>
-                    </li>
-                    <li class="header menu item">
-                        <a href="/" class="header-menu-link">shop</a>
-                    </li>
+                <li class="header menu item">
+                    <a href="/" class="header-menu-link is-current">home</a>
+                </li>
+                <li class="header menu item">
+                    <a href="/" class="header-menu-link">pages</a>
+                </li>
+                <li class="header menu item">
+                    <a href="/" class="header-menu-link">portfolio</a>
+                </li>
+                <li class="header menu item">
+                    <a href="/" class="header-menu-link">blog</a>
+                </li>
+                <li class="header menu item">
+                    <a href="/" class="header-menu-link">shop</a>
+                </li>
             </ul>
         </nav>
         <div class="header-actions">
-            <button 
-            class="button header-book-button" 
-            type="button">book now</button>
-            <button
-        class="header-burger-button"
-        type="button"
-        title="Open menu"
-      >
-        <span class="header-burger-button-line"></span>
-        <span class="header-burger-button-line"></span>
-        <span class="header-burger-button-line"></span>
-      </button>
+            <button class="button header-book-button" type="button">book now</button>
+            <button class="header-burger-button" type="button" title="Open menu">
+                <span class="visually-hidden">Open menu</span>
+                <span class="header-burger-button-line"></span>
+                <span class="header-burger-button-line"></span>
+                <span class="header-burger-button-line"></span>
+            </button>
         </div>
     </header>
+    <main class="content">
+        <h1 class="visually-hidden">Kropp Fitness Club</h1>
+        <section class="banner">
+            <h2 class="visually-hidden">Datf Event</h2>
+            <div class="banner-body"> <!--стрелка надписи-->
+                <div class="banner-info">
+                    New event<br/>
+                    coming up /<time datetime="06-07">june 7</time> - <time datetime="06-13">13</time> 
+                </div>
+                <h3 class="banner-title">Crossfit</h3>
+            </div>
+            <div class="banner-pagination"><!--3 точки -->
+                 <ul class="banner-pagination-list">
+                    <li class="banner-pagination-item"></li>
+                    <li class="banner-pagination-item"></li>
+                    <li class="banner-pagination-item">
+                        <button 
+                        class="banner-pagination-button is-current"
+                        type="button"
+                        ></button>
+                    </li>
+                 </ul>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
